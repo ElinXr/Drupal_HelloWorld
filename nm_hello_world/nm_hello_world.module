@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Provides a hello message.
+ */
+
+/**
+ * Implements hook_help().
+ *
+ * @param $route_name
+ * @param \Drupal\Core\Routing\RouteMatchInterface $route_match
+ *
+ * @return string|void
+ */
+function nm_hello_world_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+  // Provides help text to the user via the UI.
+  switch ($route_name) {
+    // Main module help for the block module.
+    case 'help.page.nm_hello_world':
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module will print a hello message to the Hello page (/hello).') . '</p>';
+      return $output;
+  }
+
+}

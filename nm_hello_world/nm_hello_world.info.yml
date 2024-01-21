@@ -1,0 +1,5 @@
+name: Hello World
+type: module
+description: 'Prints a hello message.'
+package: NM custom
+core_version_requirement: ^10

@@ -1,0 +1,7 @@
+nm_hello_world.message:
+  path: '/hello'
+  defaults:
+    _controller: '\Drupal\nm_hello_world\Controller\HelloController::showMessage'
+    _title: 'Hello Page'
+  requirements:
+    _permission: 'access content'
